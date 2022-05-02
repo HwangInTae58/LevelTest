@@ -1,31 +1,11 @@
-﻿// LevelTest2.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
+﻿// LevelTest3.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
-using namespace std;
 
-
-//https://codesyun.tistory.com/76
 #include <iostream>
-void Hanoi(int n, int start, int mid, int end) {
-	if (n == 1) {
-		cout << start << " 에서 " << end <<" 으로 이동" << endl;
-	}
-	else {
-		Hanoi(start, end, mid, n - 1);
-		cout << start << " 에서 " << end << " 으로 이동" << endl;
-		Hanoi(mid, start, end, n - 1);
-	}
-}
-
-
 
 int main()
 {
-
-	int n;
-	cin >> n;
-	
-	cout << (int)pow(2, n) - 1 << endl;
-	Hanoi(n, 1, 2, 3);
+    std::cout << "Hello World!\n";
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
